@@ -10,6 +10,11 @@ myApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider.otherwise({redirectTo: '/home'});    
   }]);
   
+//Foundation to implement on every page  
+myApp.run(function($rootScope){
+    $rootScope.$apply($(document).foundation());
+});  
+  
   // myApp.config(['$routeProvider', function($routeProvider) {    
   //   $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: SimpleController});
   //   $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: Page2Controller});
