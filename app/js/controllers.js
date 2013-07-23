@@ -17,10 +17,20 @@ myApp.controller('ServicesController', function($scope, PageService){
 });
 
 myApp.controller('ContactController', function($scope, PageService, ContactService){            
-        PageService.setTitle("Contact");        
-        
+        PageService.setTitle("Contact");            
         $scope.contacts = ContactService.getContacts();
         
 });
   
+myApp.controller('RevealController', function($scope){
+   $scope.revealTitle = "Title";
+   // $scope.revealMessages = [
+   //      {
+   //          msg: "Message 1",
+   //          msg: "Message 2",
+   //          msg: "Message 3",
+   //          msg: "Message 4"
+   //      }
+   //  ];
+});
   

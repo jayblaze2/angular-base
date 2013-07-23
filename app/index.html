@@ -12,7 +12,9 @@
 <body>
 
   <!-- Header and Nav -->
- 
+  <div ng-controller="TestController">
+    <div enter="shout()"><h1>Test It</h1></div>
+ </div>
   <div class="row">
     <div class="large-3 columns">
       <h1><img src="http://placehold.it/400x100&text=Logo"></h1>
@@ -27,7 +29,9 @@
 <div class="row">
     <div class="large-12 small-6 columns">
         <h1></h1> 
-        <reveal></reveal>
+        <div ng-controller="RevealController">
+            <reveal></reveal>
+        </div>
     </div>
     <!--End Columns-->
 </div>
